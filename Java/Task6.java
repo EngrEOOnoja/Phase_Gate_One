@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class Task1{
+	public static void main (String[] args){
+	int [] digit = {3,4,5,9,7,62,2};
+	int result = largest(digit);
+	System.out.print(result);
+	
+	}
+	
+	
+	
+	public static int  largest(int [] array){
+		int largest = array[0];
+	
+		for(int count = 0; count < array.length; count++){
+			if ( array[count] > largest){
+			largest = array[count];
+			}
+		}
+		return largest;
+	
+	
+	}
+	
+	
+	
+	
+}
+
