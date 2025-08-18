@@ -12,11 +12,11 @@ public class Task1{
 	public static int []  reversed(int [] array){
 		int smallest = array[0];
 		int [] newArray = {};
-		for(int count = 0; count < array.length-1 ; count++){
+		for(int count = 0 ; count < array.length-1 ; count++){
 			if ( array[count] < smallest){
 				smallest = array[count];
 			}
-			newArray[count] = smallest;
+			newArray[count++] = smallest;
 
 		}
 		return newArray;
