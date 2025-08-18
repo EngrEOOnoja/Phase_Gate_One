@@ -1,11 +1,5 @@
 public class Task1{
-	public static void main (String[] args){
-	int [] digit = {3,4,5,9,7,62,2,0};
-	int result = smallest(digit);
-	System.out.print(result);
-	
-	}
-	
+		
 public static int []  toGetTheTwoLargestNumbers(int [] number){
 largest = 0;
 secondLargest = 0
@@ -23,14 +17,11 @@ for(int index = 0; index < number.length; index++){
 return [secondLargest, largest]
 }
 
-
+public static void main(
 int [] number = {3,5,6,7,8,5,3};
 int result = toGetTheTwoLargestNumbers(number);
 System.out.print(result);
-	
-	
-	
-	
+		
 }
 
 
