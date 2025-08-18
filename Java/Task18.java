@@ -4,7 +4,7 @@ public static int []  toGetTheTwoLargestNumbers(int [] number){
 largest = 0;
 secondLargest = 0
 for(int index = 0; index < number.length; index++){
-	let digit = number[index]
+	int digit = number[index]
 	if( digit > largest){
 		secondLargest = largest;
 		largest = digit;
@@ -17,7 +17,7 @@ for(int index = 0; index < number.length; index++){
 return [secondLargest, largest]
 }
 
-public static void main(
+public static void main(String []args)(
 int [] number = {3,5,6,7,8,5,3};
 int result = toGetTheTwoLargestNumbers(number);
 System.out.print(result);
