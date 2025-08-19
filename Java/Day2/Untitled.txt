@@ -1,0 +1,21 @@
+function  checkMilesPerGallon( distanceToCOver, distance1GallonFuelCanCover, fuelTankRemain){
+	if( (fuelRemainInTank * distanceFuelCanCover) >= distanceToCOver){
+		return true;
+	}
+	else return false;
+		
+	
+	}
+	
+
+let const1 = 50;
+let const2 =  25;
+let const3 = 2;
+let result = checkMilesPerGallon(const1 + const2 + const3);
+console.log(result)
+
+
+
+
+
+

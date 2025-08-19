@@ -1,0 +1,26 @@
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+/*javac -cp junit-platform-console-standalone-1.9.2.jar Task3.java Task3Test.java
+java -jar junit-platform-console-standalone-1.9.2.jar -cp . --select-class Task3Test*/
+
+public class Task3Test{
+
+@Test
+public void testcheckAge(){
+	//Arrange
+	int [] names = {"john"};
+			
+		
+	//Act
+	Task3 input = new Task3();
+	int result = input.checkNames(names);
+	
+	
+	//Assert
+	assertEquals(result, 0);
+}
+
+
+	}
+
