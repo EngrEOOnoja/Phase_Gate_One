@@ -7,23 +7,45 @@ java -jar junit-platform-console-standalone-1.9.2.jar -cp . --select-class Task1
 
 public class Task1Test{
 
-@Test
-public void testgetAddedItems(){
-	//Arrange
-	String name = newItem + " added successfully";
-			
-		
-	//Act
-	Task1 input = new Task1();
-	String result = input.getAddedItems(name);
-	
+ @Test
+    public void testAddNewItem() {
+       //Arrange
+       String item = "apple";
+    
+    	//Act
+        String result = Task1.getAddedItems(item);
+        
+        //Assert
+        assertEquals("apple added successfully.", result);
+        }
 
-	//Assert
-	assertEquals(result, newItem + " added successfully");
-}
+    @Test
+    public void testAddDuplicateItem() {
+    	//Arrange
+    	String item = "apple";
+        Task1.items.add("apple");
+        
+        //Act
+        String result = Task1.getAddedItems(item);
+        
+        //Assert
+        assertEquals("apple already exists.", result);
+    }
 
-}
+    @Test
+    public void testRemoveExistingItem() {
+    	//Arrange
+    	String item = "banana";
+        Task1.items.add("banana");
+        
+        //Act
+        String result = Task1.letRemovedItems(item);
+        
+         //Assert
+        assertEquals("banana removed successfully.", result);
+         }
 
+ }
 
 
 
