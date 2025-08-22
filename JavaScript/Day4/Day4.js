@@ -2,13 +2,13 @@ const prompt = require('prompt-sync')();
 let items = [];
 
 function mainMenu() {
-    console.log(`
-    Welcome to your Best Shopping Chart...! 
+    console.log(`Welcome to your Best Shopping Chart...! 
     List of menu....! 
     1. Add items. 
-    2. Remove items. 
-    3. Show All Items 
-    0. Exit. `);
+    2. Remove items.  
+    0. Exit.
+    
+     `);
     let menup = prompt('Enter your choice: ');
     switch (menup) {
         case '1':
@@ -34,7 +34,7 @@ function mainMenu() {
             break;
     }
 }
-
+/*
 function getAddedItems(newItem) {
     if (!items.includes(newItem)) {
         items.push(newItem);
@@ -66,7 +66,7 @@ function exit() {
     process.exit(0);
 }
 
-
+*/
 
 mainMenu();
 
